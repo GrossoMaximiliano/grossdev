@@ -22,7 +22,7 @@ changeAction();
 addEventListener("scroll", (event) => {
     if ( window.scrollY > 100 ) {
         document.getElementById("navinfo").style.maxHeight = "0px";
-        document.getElementById("navinfo").style.backdropFilter = "blur(24px)";
+        document.getElementById("navinfo").style.backdropFilter = "blur(54px)";
         document.getElementById("nav").style.backgroundColor = "rgb(10, 10, 10, 0.8)";
         document.getElementById("bar").style.marginTop = "0";
     }

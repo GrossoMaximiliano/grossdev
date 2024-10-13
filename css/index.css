@@ -1,8 +1,9 @@
 body {
-  background-color: #0A0A0A;
+  background-color: #020504;
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
+  color: rgb(199, 199, 199);
 }
 
 a {
@@ -94,7 +95,7 @@ nav .bar .atajos a:hover {
 }
 nav .bar .botones .contacto {
   background-color: #17FFA6;
-  color: #0A0A0A;
+  color: #020504;
   padding: 8px 26px;
   border-radius: 0.4rem;
   font-weight: 700;
@@ -110,6 +111,7 @@ nav .bar .botones .contacto {
   font-family: "Inter", sans-serif;
   letter-spacing: 1px;
   position: relative;
+  overflow: hidden;
 }
 .presentacion .contenido {
   width: 60%;
@@ -143,7 +145,7 @@ nav .bar .botones .contacto {
   text-transform: uppercase;
 }
 .presentacion .contenido .boton:hover {
-  color: #0A0A0A;
+  color: #020504;
   background-color: #12CC85;
   font-weight: 500;
 }
@@ -179,48 +181,6 @@ nav .bar .botones .contacto {
   font-size: 30px;
 }
 
-.presentacion::before, .presentacion::after, .dots::before, .dots::after {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 3em;
-  height: 3em;
-  content: ".";
-  mix-blend-mode: screen;
-  animation: 44s -27s move infinite ease-in-out alternate;
-}
-
-.dots {
-  font-size: 52px;
-}
-
-.presentacion::before {
-  text-shadow: 2.0964818776em -0.2056125323em 7px hsla(226.6662911075, 100%, 50%, 0.2), 2.2977229374em 2.3945340112em 7px hsla(272.3728685204, 100%, 50%, 0.2), 0.9164349937em -0.3555466983em 7px hsla(88.1025534035, 100%, 50%, 0.2), 1.6591727288em 0.4816187024em 7px hsla(17.2415788045, 100%, 50%, 0.2), -0.2280550179em -0.3193388896em 7px hsla(264.6368540822, 100%, 50%, 0.2), 0.5196671099em -0.3423605323em 7px hsla(77.2536030707, 100%, 50%, 0.2), 0.7717373396em 0.8740968171em 7px hsla(319.9886074017, 100%, 50%, 0.2), 0.5109309264em 1.898309162em 7px hsla(327.0379019869, 100%, 50%, 0.2), 1.1107500829em 1.663296288em 7px hsla(106.4604582881, 100%, 50%, 0.2), 0.4881378368em -0.1108593063em 7px hsla(333.0034418224, 100%, 50%, 0.2), 1.5771478966em -0.486652483em 7px hsla(168.7837650053, 100%, 50%, 0.2), 0.6804520306em 1.6902567088em 7px hsla(254.6718157344, 100%, 50%, 0.2), 0.605545158em 1.0123261506em 7px hsla(273.3819056891, 100%, 50%, 0.2), 0.9713680431em 2.2190022505em 7px hsla(30.8540082787, 100%, 50%, 0.2), 1.136621879em 0.2206275358em 7px hsla(208.735347847, 100%, 50%, 0.2), 2.4089902581em 0.8833929668em 7px hsla(133.7149779902, 100%, 50%, 0.2), 0.2967875305em 0.6660998455em 7px hsla(295.0120043647, 100%, 50%, 0.2), 1.727886098em 2.4655277396em 7px hsla(354.334132676, 100%, 50%, 0.2), 0.2213544484em 0.4815567439em 7px hsla(179.7749978018, 100%, 50%, 0.2), 2.0278955357em 0.8482415963em 7px hsla(164.0094772159, 100%, 50%, 0.2), 2.1384167315em 0.5034822526em 7px hsla(138.5357023453, 100%, 50%, 0.2), 0.985234721em -0.2548965092em 7px hsla(299.7555576915, 100%, 50%, 0.2), 2.042457735em 1.3370076061em 7px hsla(174.7170876024, 100%, 50%, 0.2), 1.1479862058em 1.6996607638em 7px hsla(179.3663671119, 100%, 50%, 0.2), 1.3987695215em 0.4597464377em 7px hsla(312.0396214402, 100%, 50%, 0.2), 2.2814154793em 2.2852093686em 7px hsla(206.0603244291, 100%, 50%, 0.2), -0.4466049136em 1.7636350419em 7px hsla(302.7048857901, 100%, 50%, 0.2), -0.3163895247em 2.1398509355em 7px hsla(218.0445153448, 100%, 50%, 0.2), 1.5724755971em -0.0962499246em 7px hsla(102.5508865025, 100%, 50%, 0.2), 2.1146676692em 1.9720269213em 7px hsla(324.3782008719, 100%, 50%, 0.2), 2.2196404435em 1.6131746996em 7px hsla(138.2811459664, 100%, 50%, 0.2), 2.3913759451em -0.4532932317em 7px hsla(49.6675087287, 100%, 50%, 0.2), 0.3913064329em 0.0596877047em 7px hsla(48.3321299807, 100%, 50%, 0.2), 1.8561216955em 1.4324530285em 7px hsla(34.8886066366, 100%, 50%, 0.2), 1.2420025438em -0.465400735em 7px hsla(344.5643114657, 100%, 50%, 0.2), 1.7356667349em 2.0559025656em 7px hsla(31.042919332, 100%, 50%, 0.2), -0.2672311517em 2.0949577735em 7px hsla(79.1788086091, 100%, 50%, 0.2), 0.8307249239em 2.2679877215em 7px hsla(246.2110890435, 100%, 50%, 0.2), 1.8263362129em 2.3649341882em 7px hsla(43.0167177282, 100%, 50%, 0.2), -0.3357916257em 0.8649748782em 7px hsla(164.2118764786, 100%, 50%, 0.2), 2.0149328124em 1.0886340755em 7px hsla(329.0639605314, 100%, 50%, 0.2);
-  animation-duration: 44s;
-  animation-iteration-count: infinite;
-}
-
-.presentacion::after {
-  text-shadow: -0.1912510599em 1.3911574275em 7px hsla(333.0731682283, 100%, 50%, 0.2), 0.9400502024em -0.3878973876em 7px hsla(341.2416389719, 100%, 50%, 0.2), 0.9661700215em -0.4005660306em 7px hsla(182.1628456601, 100%, 50%, 0.2), 0.9879522199em 1.1273818468em 7px hsla(205.9881334243, 100%, 50%, 0.2), 1.541410582em 2.1982128096em 7px hsla(305.9094386861, 100%, 50%, 0.2), 2.245345653em 0.5478780567em 7px hsla(155.1029576459, 100%, 50%, 0.2), 1.6338633912em 2.3584827795em 7px hsla(253.6477923173, 100%, 50%, 0.2), 1.1312743898em 0.9836715189em 7px hsla(245.3954897154, 100%, 50%, 0.2), 1.0961966554em 1.0998570968em 7px hsla(310.7554518925, 100%, 50%, 0.2), 0.6993695006em 0.1458804203em 7px hsla(240.0254767249, 100%, 50%, 0.2), 0.9831488923em 2.1943315963em 7px hsla(238.0265319971, 100%, 50%, 0.2), 1.9534497084em -0.3066959115em 7px hsla(138.5404145875, 100%, 50%, 0.2), 1.6983949375em 0.6231036877em 7px hsla(179.0318129038, 100%, 50%, 0.2), 1.1440559656em 1.5677704561em 7px hsla(58.0107343432, 100%, 50%, 0.2), 1.6233211179em -0.3750113526em 7px hsla(197.4075881355, 100%, 50%, 0.2), 1.1376116464em 0.7237587343em 7px hsla(236.917904187, 100%, 50%, 0.2), 2.3864467903em 1.0852183757em 7px hsla(133.5488685946, 100%, 50%, 0.2), 2.110179911em 1.9533952415em 7px hsla(333.2196616324, 100%, 50%, 0.2), 0.5588665269em 2.1012965748em 7px hsla(108.4338909494, 100%, 50%, 0.2), 2.2594725428em 2.3221564312em 7px hsla(38.722944282, 100%, 50%, 0.2), 1.6730832259em -0.016548823em 7px hsla(131.1802254729, 100%, 50%, 0.2), -0.3303740698em 0.6478331798em 7px hsla(29.8759666158, 100%, 50%, 0.2), 2.1483540235em 0.092648664em 7px hsla(199.5246950353, 100%, 50%, 0.2), 1.4347249638em -0.4482179258em 7px hsla(94.6205613776, 100%, 50%, 0.2), 0.3934363282em 0.839397367em 7px hsla(233.0839465945, 100%, 50%, 0.2), -0.4901377534em 1.6922892758em 7px hsla(66.360150512, 100%, 50%, 0.2), 1.7492848055em -0.0083014762em 7px hsla(263.9740495994, 100%, 50%, 0.2), 0.6665216486em 1.7985920107em 7px hsla(5.1516712503, 100%, 50%, 0.2), 0.7214299511em 2.2330431379em 7px hsla(208.2259404209, 100%, 50%, 0.2), 0.5914588422em -0.3318001822em 7px hsla(26.7466986992, 100%, 50%, 0.2), 1.7568453072em 0.1591714337em 7px hsla(182.3347008435, 100%, 50%, 0.2), 0.1506819325em 1.3624344441em 7px hsla(184.4856905416, 100%, 50%, 0.2), -0.4418003208em 0.2485268304em 7px hsla(178.1774828304, 100%, 50%, 0.2), -0.1943789634em 1.5434351419em 7px hsla(312.8248535887, 100%, 50%, 0.2), 2.0232372239em 1.1590079731em 7px hsla(21.1944008697, 100%, 50%, 0.2), -0.3488676943em 0.7637669111em 7px hsla(222.8182256827, 100%, 50%, 0.2), 0.7174276965em 0.7502468496em 7px hsla(163.1227896375, 100%, 50%, 0.2), 1.2508436015em -0.4549374954em 7px hsla(13.5301618308, 100%, 50%, 0.2), 1.8678779904em 1.829663761em 7px hsla(239.1788714666, 100%, 50%, 0.2), 1.9734536704em 0.6318883061em 7px hsla(305.5056417081, 100%, 50%, 0.2), 2.3684556374em -0.0829525984em 7px hsla(74.4522380953, 100%, 50%, 0.2);
-  animation-duration: 43s;
-  animation-delay: -32s;
-  animation-iteration-count: infinite;
-}
-
-.dots::before {
-  text-shadow: 0.7375727029em 1.934598555em 7px hsla(302.8102158295, 100%, 50%, 0.2), 2.0394907297em 2.1518900138em 7px hsla(100.5215759882, 100%, 50%, 0.2), 0.3379735537em 1.8894125677em 7px hsla(265.641611602, 100%, 50%, 0.2), 0.489129712em 0.7476329249em 7px hsla(301.8138273995, 100%, 50%, 0.2), 0.3524707393em -0.4443686233em 7px hsla(182.4588262233, 100%, 50%, 0.2), 0.1048240828em 0.6502130553em 7px hsla(106.5492769788, 100%, 50%, 0.2), -0.3484583576em 1.0284520759em 7px hsla(342.5845022138, 100%, 50%, 0.2), 1.1955676841em 1.4670354495em 7px hsla(55.382082766, 100%, 50%, 0.2), 1.1749580107em 1.5000731989em 7px hsla(313.0885067973, 100%, 50%, 0.2), 0.5042548651em 0.0935906382em 7px hsla(143.3580212676, 100%, 50%, 0.2), 1.9760993181em 1.7725786446em 7px hsla(180.403214291, 100%, 50%, 0.2), -0.2901660275em 1.4308629782em 7px hsla(14.6172558051, 100%, 50%, 0.2), 1.2484491704em 2.1918029118em 7px hsla(25.8513616388, 100%, 50%, 0.2), 0.0859978578em 2.0845011429em 7px hsla(206.7692394856, 100%, 50%, 0.2), 0.7673784992em 0.1358586979em 7px hsla(306.1743957325, 100%, 50%, 0.2), 1.5225662935em 0.9761526708em 7px hsla(169.6324108497, 100%, 50%, 0.2), -0.2945019907em 0.4901886843em 7px hsla(217.8491823374, 100%, 50%, 0.2), 0.9121664922em 1.6901235625em 7px hsla(28.7170530545, 100%, 50%, 0.2), 0.7767446374em 0.7917948085em 7px hsla(174.9681542016, 100%, 50%, 0.2), 1.2530641068em 1.0618061154em 7px hsla(199.149925844, 100%, 50%, 0.2), 2.0139239557em 0.405615361em 7px hsla(326.6262581896, 100%, 50%, 0.2), -0.0988112687em 0.8465433812em 7px hsla(136.5281808419, 100%, 50%, 0.2), -0.1260020564em 1.5793781796em 7px hsla(348.1094175879, 100%, 50%, 0.2), 1.3244621269em -0.3279243523em 7px hsla(80.7553341958, 100%, 50%, 0.2), -0.4215528274em 2.3257854492em 7px hsla(205.3359058934, 100%, 50%, 0.2), 1.9985233705em 1.1562689986em 7px hsla(228.0163040095, 100%, 50%, 0.2), -0.1871653044em 1.874861996em 7px hsla(171.3867042976, 100%, 50%, 0.2), 1.2566409651em 1.7623493111em 7px hsla(293.0680068015, 100%, 50%, 0.2), 2.080480624em 0.4208557346em 7px hsla(27.9392411796, 100%, 50%, 0.2), 0.291675849em 1.8288199626em 7px hsla(27.5446810514, 100%, 50%, 0.2), -0.4927512998em 1.3653463891em 7px hsla(299.7337370988, 100%, 50%, 0.2), 1.4677003369em -0.336786331em 7px hsla(235.8840631603, 100%, 50%, 0.2), 1.0720985557em -0.2236408432em 7px hsla(303.8400058205, 100%, 50%, 0.2), 0.3258734485em 2.4654962021em 7px hsla(217.2888478926, 100%, 50%, 0.2), 1.3510185403em 1.0306539022em 7px hsla(103.9336826381, 100%, 50%, 0.2), 1.6206540459em 0.6148586155em 7px hsla(336.0082634961, 100%, 50%, 0.2), -0.228831654em -0.0481257895em 7px hsla(238.8848989466, 100%, 50%, 0.2), 1.5678305316em 0.1776090122em 7px hsla(109.2755455653, 100%, 50%, 0.2), 2.0776606867em -0.1737151552em 7px hsla(165.9937925528, 100%, 50%, 0.2), 1.4722847122em 1.2337227953em 7px hsla(48.6734718482, 100%, 50%, 0.2), 0.3936133345em 0.7730400597em 7px hsla(89.6972374696, 100%, 50%, 0.2);
-  animation-duration: 42s;
-  animation-delay: -23s;
-  animation-iteration-count: infinite;
-}
-
-.dots::after {
-  text-shadow: -0.1726405877em -0.1188633188em 7px hsla(136.8637233957, 100%, 50%, 0.2), 2.1563995853em 0.8599983341em 7px hsla(42.5036802404, 100%, 50%, 0.2), -0.01502576em -0.2891876158em 7px hsla(248.3736504616, 100%, 50%, 0.2), -0.3792738907em 1.7768973605em 7px hsla(174.4833056021, 100%, 50%, 0.2), 0.3613806849em -0.3343509794em 7px hsla(4.3633004006, 100%, 50%, 0.2), -0.246172513em -0.4761397549em 7px hsla(349.5755596636, 100%, 50%, 0.2), -0.1400043161em 1.0514971199em 7px hsla(2.375991173, 100%, 50%, 0.2), 1.8208665603em 2.2133498642em 7px hsla(309.9208399107, 100%, 50%, 0.2), 0.1464356362em 2.2071625166em 7px hsla(211.041924804, 100%, 50%, 0.2), -0.3311179288em 1.0204846027em 7px hsla(166.0956849182, 100%, 50%, 0.2), 1.0501177738em 1.1934099386em 7px hsla(54.2043627181, 100%, 50%, 0.2), -0.2548272718em 1.9690509599em 7px hsla(348.7945136597, 100%, 50%, 0.2), -0.3675925257em 1.6146787208em 7px hsla(318.367797289, 100%, 50%, 0.2), 0.0889431448em 2.3591390157em 7px hsla(106.9826125153, 100%, 50%, 0.2), 0.4483500482em 2.0737314625em 7px hsla(20.8862337903, 100%, 50%, 0.2), 1.8923062441em 1.0875001925em 7px hsla(23.3030902187, 100%, 50%, 0.2), 1.4147443313em 0.0543623968em 7px hsla(184.5167995987, 100%, 50%, 0.2), 1.9414151258em 1.6159056089em 7px hsla(25.1393133232, 100%, 50%, 0.2), 1.500325702em 0.9183992478em 7px hsla(44.6387728349, 100%, 50%, 0.2), 1.3133649771em 0.3925900885em 7px hsla(80.3094550214, 100%, 50%, 0.2), 1.1348932963em 2.2441871213em 7px hsla(160.4493603343, 100%, 50%, 0.2), 0.0544579207em 0.2923664285em 7px hsla(137.3706887748, 100%, 50%, 0.2), 1.2919184307em -0.2309775725em 7px hsla(31.5896671221, 100%, 50%, 0.2), 0.6686353878em 1.6072777893em 7px hsla(90.9440330932, 100%, 50%, 0.2), 1.194802543em 1.0522019848em 7px hsla(291.9051872051, 100%, 50%, 0.2), 2.3036199727em -0.1770515808em 7px hsla(159.5590577269, 100%, 50%, 0.2), 2.1437280933em 1.4357860839em 7px hsla(337.6089494266, 100%, 50%, 0.2), 2.1727964969em 0.865383283em 7px hsla(274.0881295217, 100%, 50%, 0.2), 0.3340260776em 0.2648128632em 7px hsla(176.8615357777, 100%, 50%, 0.2), 1.6361393484em 2.3738783282em 7px hsla(226.9089124293, 100%, 50%, 0.2), 0.7696437429em 1.440606621em 7px hsla(59.5502710396, 100%, 50%, 0.2), 2.2686950166em 1.7997328073em 7px hsla(73.3909940479, 100%, 50%, 0.2), 1.2755699412em 2.4652097356em 7px hsla(97.1089347424, 100%, 50%, 0.2), -0.3713763837em -0.3449535629em 7px hsla(22.4901308518, 100%, 50%, 0.2), -0.4583692533em 1.3628819844em 7px hsla(335.8119872478, 100%, 50%, 0.2), 0.6289789906em 1.3659842261em 7px hsla(221.8039821383, 100%, 50%, 0.2), 0.9941357942em 0.8143484261em 7px hsla(217.1559583972, 100%, 50%, 0.2), -0.3965540343em -0.0774949621em 7px hsla(266.3267713721, 100%, 50%, 0.2), 0.6002359752em 0.238348081em 7px hsla(198.0105370205, 100%, 50%, 0.2), -0.4746346373em 0.2013020663em 7px hsla(151.3438935177, 100%, 50%, 0.2), -0.090175826em -0.1068516696em 7px hsla(275.8691358961, 100%, 50%, 0.2);
-  animation-duration: 41s;
-  animation-delay: -19s;
-  animation-iteration-count: infinite;
-}
-
 .resaltar {
   color: #1ae698;
 }
@@ -234,8 +194,10 @@ nav .bar .botones .contacto {
 }
 .clientes .titulo {
   font-size: 19px;
-  color: white;
-  letter-spacing: 1.4px;
+  font-weight: 500;
+  color: #1ae698;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 .clientes .marcas {
   width: 100%;
@@ -246,8 +208,207 @@ nav .bar .botones .contacto {
 }
 .clientes .marcas img {
   margin: 40px 42px;
-  height: 70px;
+  height: 90px;
   filter: grayscale(100%);
+}
+.clientes .marcas a:hover > img {
+  transition: 0.5s filter;
+  filter: grayscale(0%);
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 60px;
+}
+.info .left {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info .left img {
+  width: 90%;
+}
+.info .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 52%;
+  text-align: left;
+  height: 100%;
+}
+.info .right .titulo {
+  color: #1ae698;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.info .right .descripcion {
+  font-size: 16px;
+  letter-spacing: 1.1px;
+  margin: 5px;
+  color: rgb(209, 213, 219);
+}
+.info .right .botones {
+  margin-top: 25px;
+}
+.info .right .botones .boton {
+  background-color: #1ae698;
+  color: #020504;
+  padding: 8px 26px;
+  border-radius: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(199, 199, 199);
+  padding: 50px 0;
+}
+.servicios .titulo {
+  font-size: 26px;
+  letter-spacing: 1.5px;
+  margin-bottom: 0;
+  font-weight: 500;
+  color: #1ae698;
+  text-transform: uppercase;
+}
+.servicios .descripcion {
+  font-size: 17px;
+  letter-spacing: 1.5px;
+  padding-bottom: 30px;
+  width: 70%;
+  text-align: center;
+}
+.servicios .cajas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.servicios .cajas .caja {
+  margin: 7px 15px;
+  padding: 20px;
+  background-color: rgb(6, 14, 13);
+  border-radius: 10px;
+  border: 0.5px solid #222222;
+  width: 35%;
+  outline: none;
+  letter-spacing: 1.1px;
+  height: 150px;
+}
+.servicios .cajas .caja .cabecera_caja {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.servicios .cajas .caja .cabecera_caja .icon {
+  color: #0d915e;
+  font-size: 32px;
+}
+.servicios .cajas .caja .cabecera_caja a {
+  color: rgb(199, 199, 199);
+}
+.servicios .cajas .caja .caja_titulo {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 0px;
+  letter-spacing: 1px;
+  font-family: "Inter Tight", sans-serif;
+}
+.servicios .cajas .caja .descripcion_caja {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.87px;
+  color: rgb(136, 176, 149);
+}
+
+.procesos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(199, 199, 199);
+  padding: 50px 0;
+}
+.procesos .titulo {
+  font-size: 26px;
+  letter-spacing: 1.5px;
+  margin-bottom: 0;
+  font-weight: 500;
+  color: #1ae698;
+  text-transform: uppercase;
+}
+.procesos .descripcion {
+  font-size: 17px;
+  letter-spacing: 1.5px;
+  padding-bottom: 30px;
+  width: 70%;
+  text-align: center;
+}
+.procesos .lista_procesos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.procesos .lista_procesos .proceso {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 25px 20px;
+  background-color: rgb(6, 14, 13);
+  border-radius: 10px;
+  border: 0.5px solid #222222;
+  margin: 15px;
+  height: 160px;
+  width: 300px;
+  outline: none;
+  letter-spacing: 1.1px;
+  border-bottom: 4px solid #0d915e;
+}
+.procesos .lista_procesos .proceso .nro_proceso {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -17px;
+  font-size: 20px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  color: rgb(6, 14, 13);
+  background-color: #12CC85;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.procesos .lista_procesos .proceso .cabecera {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.procesos .lista_procesos .proceso .cabecera .titulo_proceso {
+  font-size: 19px;
+  font-weight: 600;
+  margin: 0;
+  color: #1ae698;
+  letter-spacing: 1.2px;
+  font-family: "Inter Tight", sans-serif;
+}
+.procesos .lista_procesos .proceso .contenido .desc_proceso {
+  font-size: 14px;
+  letter-spacing: 1.1px;
+  color: rgb(136, 176, 149);
 }
 
 @keyframes fadeInDownBig {
