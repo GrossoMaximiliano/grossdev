@@ -131,6 +131,10 @@ nav {
     }
 }
 
+.paddingNav {
+    padding-top: 110px !important;
+}
+
 .presentacion {
     padding-top: 100px;
     padding-left: 80px;
@@ -221,8 +225,20 @@ nav {
     }
 }
 
+.gray {
+    color: rgb(209, 213, 219);
+}
+
+.underline {
+    text-decoration: underline;
+}
+
 .resaltar {
     color: $primary_light;
+}
+
+.resaltar2 {
+    color: $primary;
 }
 
 .clientes {
@@ -476,7 +492,7 @@ nav {
                 .desc_proceso {
                     font-size: 14px;
                     letter-spacing: 1.1px;
-                    color: rgb(136, 176, 149);
+                    color: rgb(199, 199, 199);
                 }
             }
 
@@ -484,7 +500,7 @@ nav {
     }
 }
 
-.formulario_contacto {
+.info_invertida {
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -521,31 +537,85 @@ nav {
             color: rgb(209, 213, 219);
         }
 
-        .input { 
-            
-            input { 
-                padding: 0.9rem;
-                background-color: $secondary_bg;
-                width: 90%;
-                border: none;
-                outline: none;
-                border-radius: .75rem;
-                font-size: 14px;
-                letter-spacing: 1.1px;
-                color: rgb(209, 213, 219);
+        .botones {
+            margin-top: 25px;
+            .boton {
+                background-color: $primary_light;
+                color: $background;
+                padding: 8px 26px;
+                border-radius: 0.6rem;
+                font-weight: 700;
+                text-transform: uppercase;
             }
         }
+    }
+}
 
-        .enviar {
-            margin-top: 25px;
-            background-color: $primary_light;
-            color: $background;
-            padding: 15px 36px;
-            border-radius: 0.6rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            outline: none;
+.formulario_contacto {
+    .input { 
+        input { 
+            padding: 0.9rem;
+            background-color: $secondary_bg;
+            width: 90%;
             border: none;
+            outline: none;
+            border-radius: .75rem;
+            font-size: 14px;
+            letter-spacing: 1.1px;
+            color: rgb(209, 213, 219);
+        }
+    }
+
+    .enviar {
+        margin-top: 25px;
+        background-color: $primary_light;
+        color: $background;
+        padding: 15px 36px;
+        border-radius: 0.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        outline: none;
+        border: none;
+    }
+}
+
+footer {
+    padding: 30px;
+    background-color: $secondary_bg;
+
+    display: flex;
+    justify-content: space-evenly;
+
+
+    .footer_col {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+
+        .titulo {
+            padding-bottom: 6px;
+            border-bottom: 1px solid $primary;
+            font-size: 18px;
+            font-weight: 600;
+            color: $primary;
+            letter-spacing: 1.1px;
+        }
+
+        .descripcion {
+            margin: 0;
+            margin-bottom: 3px;
+        }
+        
+        .vinculo {
+            color: rgb(199, 199, 199);;
+            border-bottom: 1px solid gray;
+            padding: 3px 0;
+            transition: 0.6s all ease;
+
+            &:hover {
+                color: $primary;
+                border-bottom-color: $primary;
+            }
         }
     }
 }
@@ -604,4 +674,4 @@ nav {
   @keyframes typing {
     from { max-width: 0px;}
     to { max-width: 500px; }
-  }
+  } 

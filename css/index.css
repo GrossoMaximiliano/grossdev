@@ -101,6 +101,10 @@ nav .bar .botones .contacto {
   font-weight: 700;
 }
 
+.paddingNav {
+  padding-top: 110px !important;
+}
+
 .presentacion {
   padding-top: 100px;
   padding-left: 80px;
@@ -181,8 +185,20 @@ nav .bar .botones .contacto {
   font-size: 30px;
 }
 
+.gray {
+  color: rgb(209, 213, 219);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
 .resaltar {
   color: #1ae698;
+}
+
+.resaltar2 {
+  color: #12CC85;
 }
 
 .clientes {
@@ -405,25 +421,25 @@ nav .bar .botones .contacto {
 .procesos .lista_procesos .proceso .contenido .desc_proceso {
   font-size: 14px;
   letter-spacing: 1.1px;
-  color: rgb(136, 176, 149);
+  color: rgb(199, 199, 199);
 }
 
-.formulario_contacto {
+.info_invertida {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 30px 60px;
 }
-.formulario_contacto .right {
+.info_invertida .right {
   width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.formulario_contacto .right img {
+.info_invertida .right img {
   width: 90%;
 }
-.formulario_contacto .left {
+.info_invertida .left {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -431,18 +447,30 @@ nav .bar .botones .contacto {
   text-align: left;
   height: 100%;
 }
-.formulario_contacto .left .titulo {
+.info_invertida .left .titulo {
   color: #1ae698;
   font-size: 2.2rem;
   font-weight: 600;
 }
-.formulario_contacto .left .descripcion {
+.info_invertida .left .descripcion {
   font-size: 16px;
   letter-spacing: 1.1px;
   margin: 5px;
   color: rgb(209, 213, 219);
 }
-.formulario_contacto .left .input input {
+.info_invertida .left .botones {
+  margin-top: 25px;
+}
+.info_invertida .left .botones .boton {
+  background-color: #1ae698;
+  color: #020504;
+  padding: 8px 26px;
+  border-radius: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.formulario_contacto .input input {
   padding: 0.9rem;
   background-color: #14251F;
   width: 90%;
@@ -453,7 +481,7 @@ nav .bar .botones .contacto {
   letter-spacing: 1.1px;
   color: rgb(209, 213, 219);
 }
-.formulario_contacto .left .enviar {
+.formulario_contacto .enviar {
   margin-top: 25px;
   background-color: #1ae698;
   color: #020504;
@@ -463,6 +491,40 @@ nav .bar .botones .contacto {
   text-transform: uppercase;
   outline: none;
   border: none;
+}
+
+footer {
+  padding: 30px;
+  background-color: #14251F;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .footer_col {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer_col .titulo {
+  padding-bottom: 6px;
+  border-bottom: 1px solid #12CC85;
+  font-size: 18px;
+  font-weight: 600;
+  color: #12CC85;
+  letter-spacing: 1.1px;
+}
+footer .footer_col .descripcion {
+  margin: 0;
+  margin-bottom: 3px;
+}
+footer .footer_col .vinculo {
+  color: rgb(199, 199, 199);
+  border-bottom: 1px solid gray;
+  padding: 3px 0;
+  transition: 0.6s all ease;
+}
+footer .footer_col .vinculo:hover {
+  color: #12CC85;
+  border-bottom-color: #12CC85;
 }
 
 @keyframes fadeInDownBig {

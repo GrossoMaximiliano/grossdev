@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="nav">
+        <div class="navinfo" id="navinfo">
+            <div class="redes">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+            </div>
+
+            <div class="contacto">
+                <p class="celular">+54 (3482) 543723</p>
+                <p class="email">info@grossdev.com.ar</p>
+            </div>
+
+            <div class="idioma">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Bandera_de_Espa%C3%B1a.svg" alt="español" class="bandera"/>
+                <p>ES</p>
+            </div>
+        </div>
+
+        <div class="bar" id="bar">
+            <div class="logo">
+                <p>Gross<span class="resaltar">Dev</span> </p>
+            </div>
+
+            <div class="atajos">
+                <a href="/">Inicio</a>
+                <a href="/nosotros.html">Sobre Nosotros</a>
+                <a href="/#clientes">Clientes</a>
+                <a href="/#servicios">Servicios</a>
+                <a href="/#procesos">Procesos</a>
+            </div>
+
+            <div class="botones">
+                <a class="contacto" href="/contacto.html">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="info paddingNav">
+        <div class="left">
+            <img src="./images/ilustraciones/contacto.png" alt="">
+        </div>
+
+        <div class="right">
+            <h2 class="titulo">Contacto</h2>
+            <p class="descripcion"><span class="resaltar2">> Celular: </span> +543482543723</p>
+            <p class="descripcion"><span class="resaltar2">> Email: </span> <a class="gray underline" href="mailto:info@grossdev.com.ar">info@grossdev.com.ar</a></p>
+            <p class="descripcion"><span class="resaltar2">> Instagram: </span> <a class="gray underline" href="https://www.instagram.com/gross.dev/">@grossdev</a></p>
+            <p class="descripcion"><span class="resaltar2">> Facebook: </span> <a class="gray underline" href="https://www.facebook.com/grossdevsoftware/">@grossdevsoftware</a></p>
+
+            <p class="descripcion"><span class="resaltar2">Dirección:</span> Actualmente nos encontramos en la ciudad de las Toscas, Santa fe, Argentina. Aunque aspiramos a tener oficinas en distintos lugares del pais.</p>
+        </div>
+    </div>
+
+
+    <div class="formulario_contacto info_invertida">
+        <div class="left">
+            <h1 class="titulo">Alcanzamos metas juntos, tu éxito es nuestro objetivo.</h1>
+            <p class="descripcion">Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas.</p>
+
+            <form class="formulario" method="POST" action="">
+                <div class="input">
+                    <p>Nombre (*)</p>
+                    <input type="text" name="nombre" />
+                </div>
+
+                <div class="input">
+                    <p>Correo Electronico (*)</p>
+                    <input type="email" name="email" />
+                </div>
+
+                <div class="input">
+                    <p>Mensaje</p>
+                    <input type="text" name="mensaje" />
+                </div>
+
+                <button class="enviar">
+                    Enviar
+                </button>
+            </form>
+        </div>
+
+        <div class="right">
+            <img src="./images/ilustraciones/logro2.png" alt="">
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_col">
+            <p class="titulo">GrossDev</p>
+            <p class="descripcion">Te acompañamos y colaboramos para disponibilizar soluciones tecnológicas integrales, de alto valor, con foco en escalabilidad y performance.</p>
+        </div>
+
+        <div class="footer_col">
+            <p class="titulo">Accesos utiles</p>
+            <a href="/nosotros.html" class="vinculo">> Sobre nosotros</a>
+            <a href="/nosotros.html#nuestro_equipo" class="vinculo">> Nuestro Equipo</a>
+            <a href="/nosotros.html#nuestros_valores" class="vinculo">> Nuestros Valores</a>
+        </div>
+
+        
+        <div class="footer_col">
+            <p class="titulo">Contacto</p>
+            <p class="descripcion"><b>Dirección:</b> <span class="resaltar2">Las Toscas, Santa fe, Argentina.</span></p>
+            <p class="descripcion"><b>Telefono:</b> <span class="resaltar2">+54 3482-543723</span></p>
+            <p class="descripcion"><b>Contacto:</b> <span class="resaltar2">info@grossdev.com.ar</span></p>
+        </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
