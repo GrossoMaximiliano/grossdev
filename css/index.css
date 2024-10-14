@@ -76,6 +76,52 @@ nav .bar .logo {
   color: white;
   font-weight: 500;
 }
+nav .bar .atajos_mobile {
+  position: fixed;
+  background-color: #14251F;
+  height: 100vh;
+  max-height: 0;
+  overflow: hidden;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  transition: 0.8s max-height;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+nav .bar .atajos_mobile .selected {
+  background-color: rgb(37, 37, 37);
+  color: rgb(255, 255, 255);
+  transition: 0.5s all ease;
+}
+nav .bar .atajos_mobile a {
+  margin: 0 2px;
+  font-size: 28px;
+  color: rgb(168, 168, 168);
+  letter-spacing: 0.9px;
+  padding: 8px 12px;
+  border-radius: 0.4rem;
+}
+nav .bar .atajos_mobile a:hover {
+  background-color: rgb(37, 37, 37);
+  color: rgb(255, 255, 255);
+  transition: 0.5s all ease;
+}
+nav .bar .atajos_mobile #close_menu {
+  background: none;
+  border: none;
+  position: absolute;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 0;
+  transition: 0.5s font-size;
+}
+nav .bar .atajos_mobile #close_menu i {
+  color: white;
+}
 nav .bar .atajos .selected {
   background-color: rgb(37, 37, 37);
   color: rgb(199, 199, 199);
@@ -527,6 +573,158 @@ footer .footer_col .vinculo:hover {
   border-bottom-color: #12CC85;
 }
 
+.showonphone {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .servicios .titulo {
+    font-size: 23px;
+  }
+  .servicios .descripcion {
+    text-align: justify;
+    width: 90%;
+    font-size: 14px;
+  }
+  .presentacion {
+    width: calc(100% - 30px);
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .presentacion .contenido {
+    font-size: 1.18rem;
+  }
+  .presentacion .contenido h1 {
+    flex-direction: column;
+    display: flex;
+  }
+  .info_invertida {
+    padding: 30px 30px;
+  }
+  .info_invertida .left {
+    width: 100%;
+  }
+  .info_invertida .left .titulo {
+    font-size: 23px;
+  }
+  .info_invertida .left .descripcion {
+    width: 100%;
+    font-size: 14px;
+  }
+  .info {
+    padding: 30px 30px;
+  }
+  .info .right {
+    width: 100%;
+  }
+  .info .right .titulo {
+    font-size: 23px;
+  }
+  .info .right .descripcion {
+    width: 100%;
+    font-size: 14px;
+  }
+  .formulario_contacto .input input {
+    width: 100%;
+  }
+  .formulario_contacto .input p {
+    text-align: left;
+  }
+}
+@media (max-width: 900px) {
+  .showonphone {
+    display: inherit !important;
+  }
+  .hidephone {
+    display: none !important;
+  }
+  nav {
+    width: calc(100% - 40px);
+    padding: 23px 20px;
+  }
+  nav .navinfo {
+    padding: 0 15px;
+    width: calc(100% - 30px);
+    justify-content: center;
+  }
+  nav .bar .botones .btnmenu {
+    background: none;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    height: 0;
+  }
+  nav .bar .botones .btnmenu i {
+    color: white;
+  }
+  .clientes {
+    text-align: center;
+  }
+  .clientes .marcas {
+    flex-wrap: wrap;
+  }
+  .clientes .marcas img {
+    margin: 10px;
+  }
+  .presentacion .contenido {
+    width: 100%;
+    text-align: left;
+  }
+  .presentacion .contenido .titulo {
+    text-align: left;
+  }
+  .presentacion .ilustracion {
+    display: none;
+  }
+  .servicios .cajas {
+    flex-direction: column;
+  }
+  .servicios .cajas .caja {
+    width: 80%;
+    margin: 10px 0;
+  }
+  .procesos .titulo {
+    width: 85%;
+  }
+  .procesos .descripcion {
+    width: 85%;
+    text-align: left;
+  }
+  .procesos .lista_procesos {
+    flex-direction: column;
+  }
+  .procesos .lista_procesos .proceso {
+    width: 85%;
+    margin: 15px 0;
+    height: auto;
+  }
+  .info .left {
+    display: none;
+  }
+  .info .right {
+    width: 100%;
+    text-align: left;
+  }
+  .info_invertida .left {
+    width: 100%;
+    text-align: left;
+  }
+  .info_invertida .right {
+    display: none;
+  }
+  .formulario_contacto .input input {
+    width: calc(100% - 0.9rem - 0.9rem);
+  }
+  .formulario_contacto .input p {
+    text-align: left;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer .footer_col {
+    width: 100%;
+  }
+}
 @keyframes fadeInDownBig {
   0% {
     transform: translate3d(0, -30px, 0);

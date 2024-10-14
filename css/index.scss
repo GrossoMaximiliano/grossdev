@@ -98,6 +98,61 @@ nav {
             font-weight: 500;
         }
 
+        .atajos_mobile {
+            position: fixed;
+            background-color: $secondary_bg;
+            height: 100vh;
+            max-height: 0;
+            overflow: hidden;
+            width: 100vw;
+            top: 0;
+            left: 0;
+
+            transition: 0.8s max-height;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .selected { 
+                background-color: rgb(37, 37, 37);
+                color: rgb(255, 255, 255);
+                transition: 0.5s all ease;
+            }
+
+            a {
+                margin: 0 2px;
+                font-size: 28px;
+                color: rgb(168, 168, 168);
+                letter-spacing: 0.9px;
+                padding: 8px 12px;
+                border-radius: 0.4rem;
+                &:hover {
+                    background-color: rgb(37, 37, 37);
+                    color: rgb(255, 255, 255);
+                    transition: 0.5s all ease;
+                }
+
+            }
+
+            #close_menu {
+                background: none;
+                border: none;
+                position: absolute;
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                font-size: 0;
+                transition: 0.5s font-size;                
+                i {
+                    color: white;
+                }
+            }
+
+
+        }
+
         .atajos {
             .selected { 
                 background-color: rgb(37, 37, 37);
@@ -607,7 +662,7 @@ footer {
         }
         
         .vinculo {
-            color: rgb(199, 199, 199);;
+            color: rgb(199, 199, 199);
             border-bottom: 1px solid gray;
             padding: 3px 0;
             transition: 0.6s all ease;
@@ -616,6 +671,217 @@ footer {
                 color: $primary;
                 border-bottom-color: $primary;
             }
+        }
+    }
+}
+
+.showonphone {
+    display: none;
+}
+
+@media ( max-width: 600px ){
+
+    .servicios {
+        .titulo {
+            font-size: 23px;
+        }
+
+        .descripcion {
+            text-align: justify;
+            width: 90%;
+            font-size: 14px;
+        }
+    }
+
+    .presentacion {
+        width: calc( 100% - 30px );
+        padding-right: 15px;
+        padding-left: 15px;
+
+        .contenido {
+            font-size: 1.18rem;
+            h1 {
+                flex-direction: column;
+                display: flex;
+            }
+
+
+        }
+    }
+
+    .info_invertida {
+        padding: 30px 30px;
+        .left {
+            width: 100%;
+    
+            .titulo {
+                font-size: 23px;
+            }
+    
+            .descripcion {
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .info {
+        padding: 30px 30px;
+        .right {
+            width: 100%;
+    
+            .titulo {
+                font-size: 23px;
+            }
+    
+            .descripcion {
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .formulario_contacto  {
+        .input {
+            input {
+                width: 100%;
+            }
+
+            p {
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media ( max-width: 900px ){
+    .showonphone {
+        display: inherit !important;
+    }
+    .hidephone {
+        display: none !important;
+    }
+
+    nav {
+        width: calc(100% - 40px);
+        padding: 23px 20px;
+
+        .navinfo {
+            padding: 0 15px;
+            width: calc(100% - 30px);
+            justify-content: center;
+        }
+
+        .bar {
+            .botones {
+                .btnmenu {
+                    background: none;
+                    font-size: 20px;
+                    outline: none;
+                    border: none;
+                    height: 0;
+
+                    i {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .clientes {
+        text-align: center;
+        .marcas {
+            flex-wrap: wrap;
+            img {
+                margin: 10px;
+            }
+        }
+    }
+
+    .presentacion {
+        .contenido {
+            width: 100%;
+            text-align: left;
+            .titulo { 
+                text-align: left;
+
+            }
+        }
+        .ilustracion {
+            display: none;
+        }
+    }
+
+    .servicios {
+        .cajas {
+            flex-direction: column;
+            .caja {
+                width: 80%;
+                margin: 10px 0;
+            }
+        }
+    }
+    
+    .procesos {
+        .titulo {
+            width: 85%;
+        }
+        .descripcion {
+            width: 85%;
+            text-align: left;
+        }
+        .lista_procesos {
+            flex-direction: column;
+            .proceso {
+                width: 85%;
+                margin: 15px 0;
+                height: auto;
+
+
+            }
+        }
+    }
+
+    .info {
+        .left {
+            display: none;
+        }
+        .right {
+            width: 100%;
+            text-align: left;
+        }
+    }
+
+    .info_invertida {
+        .left {
+            width: 100%;
+            text-align: left;
+        }
+        .right {
+            display: none;
+        }
+    }
+
+    .formulario_contacto  {
+        .input {
+            input {
+                width: calc(100% - 0.9rem - 0.9rem);
+            }
+
+            p {
+                text-align: left;
+            }
+        }
+    }
+
+
+    footer {
+        flex-direction: column;
+
+        .footer_col{
+            width: 100%;
         }
     }
 }

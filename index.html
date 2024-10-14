@@ -16,7 +16,7 @@
 <body>
     <nav id="nav">
         <div class="navinfo" id="navinfo">
-            <div class="redes">
+            <div class="redes hidephone">
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-square-facebook"></i>
             </div>
@@ -26,7 +26,7 @@
                 <p class="email">info@grossdev.com.ar</p>
             </div>
 
-            <div class="idioma">
+            <div class="idioma hidephone">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Bandera_de_Espa%C3%B1a.svg" alt="español" class="bandera"/>
                 <p>ES</p>
             </div>
@@ -37,7 +37,7 @@
                 <p>Gross<span class="resaltar">Dev</span> </p>
             </div>
 
-            <div class="atajos">
+            <div class="atajos  hidephone">
                 <a href="/" class="selected">Inicio</a>
                 <a href="/nosotros.html">Sobre Nosotros</a>
                 <a href="/#clientes">Clientes</a>
@@ -45,8 +45,23 @@
                 <a href="/#procesos">Procesos</a>
             </div>
 
+            <div class="atajos_mobile" id="atajos_mobile">
+                <a href="/" class="selected">Inicio</a>
+                <a href="/nosotros.html">Sobre Nosotros</a>
+                <a href="/#clientes" onclick="closeMenu()">Clientes</a>
+                <a href="/#servicios" onclick="closeMenu()">Servicios</a>
+                <a href="/#procesos" onclick="closeMenu()">Procesos</a>
+
+                <button id="close_menu" onclick="toggleMenu()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
             <div class="botones">
-                <a class="contacto" href="/contacto.html">Contacto</a>
+                <a class="contacto hidephone" href="/contacto.html">Contacto</a>
+                <button class="btnmenu"  onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars btnmenu showonphone"></i>
+                </button>
             </div>
         </div>
     </nav>
@@ -217,7 +232,7 @@
 
     <div class="formulario_contacto info_invertida">
         <div class="left">
-            <h1 class="titulo">Alcanzamos metas juntos, tu éxito es nuestro objetivo.</h1>
+            <h1 class="titulo">Alcancemos metas juntos, tu éxito es nuestro objetivo.</h1>
             <p class="descripcion">Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas.</p>
 
             <form class="formulario" method="POST" action="">
